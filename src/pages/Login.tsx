@@ -4,8 +4,8 @@ import { Link, useNavigate } from 'react-router-dom';
 import { getMyDetails, login } from '../../services/auth';
 
 export default function Login() {
-  const [email, setEmail] = useState('adminone@example.com');
-  const [password, setPassword] = useState('1234');
+  const [email, setEmail] = useState('Email');
+  const [password, setPassword] = useState('Password');
   const [error, setError] = useState('');
   const { setUser } = useAuth();
   const navigate = useNavigate();
