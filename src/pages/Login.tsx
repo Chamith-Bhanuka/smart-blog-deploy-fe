@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { useAuth } from '../context/authContext';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { getMyDetails, login } from '../../services/auth';
 
 export default function Login() {
@@ -62,9 +62,9 @@ export default function Login() {
 
         <p className="text-sm text-gray-600 mt-3">
           No account?
-          <a href="/register" className="text-blue-600">
+          <Link to="/register" className="text-blue-600">
             Register
-          </a>
+          </Link>
         </p>
       </div>
     </div>
